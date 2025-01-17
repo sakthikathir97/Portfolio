@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #222;
+
+        }
+
+
+        ul h1 {
+            position: relative;
+            padding: 15px;
+            right: 25pc;
+            color: white;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        div .circle {
+            background-color: blue;
+            width: 40px;
+            height: 25px;
+            padding: 15px 23px;
+            border-radius: 50%;
+            font-size: 25px;
+
+        }
+
+        nav {
+            width: 80pc;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 30px;
+            position: relative;
+            left: 25pc;
+            width: 55pc
+        }
+
+        ul li {
+            list-style: none;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: gray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 30px;
+            line-height: 50px;
+
+        }
+
+        li a:hover {
+            color: white;
+        }
+
+        li #About {
+            color: white;
+        }
+
+
+        .section1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: inherit;
+            color: white;
+            width: 80pc;
+            margin-top: 2pc;
+        }
+
+        .section1 .content1 {
+            background-color: whitesmoke;
+            border-radius: 50%;
+            border: 18px outset rgb(18 16, 107, 0.7);
+            margin-left: 25px;
+        }
+
+        ul h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .content1 img {
+            border-radius: 55%;
+
+        }
+
+        .content2 {
+            margin-top: 25px;
+        }
+
+        .content2 p {
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 50px;
+        }
+
+
+        .content2 h3 {
+
+            line-height: 75px;
+            font-size: 45px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .content2 blockquote {
+            width: 30pc;
+            word-spacing: 1px;
+            text-align: justify;
+            line-height: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .section1 img {
+
+            height: 330px;
+            width: 350px;
+            border-bottom-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+
+        }
+
+
+        .what {
+            padding: 25px;
+        }
+
+        .what h3 {
+
+            border-bottom: 4px solid rgba(216, 74, 74, 1);
+            width: 90px;
+            padding: 3px;
+            color: white;
+            margin-top: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2pc;
+            color: white;
+            width: 80pc;
+
+        }
+
+
+
+        .section2 .content3 {
+
+            width: 30pc;
+            line-height: 25px;
+        }
+
+
+        .content3 img {
+            width: 40px;
+            border-radius: 10px;
+
+        }
+
+
+        .section2 .content4 {
+
+            width: 30pc;
+            line-height: 25px;
+        }
+
+        .content3 p {
+            margin-top: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+
+
+
+        .content3 span {
+
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 15px;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .content4 img {
+            width: 40px;
+            border-radius: 10px;
+
+        }
+
+
+
+        .content4 span {
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 15px;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .content4 p {
+            margin-top: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+
+        .section3 {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2pc;
+            color: white;
+            width: 80pc;
+
+        }
+
+
+        /* close */
+
+        .section3 .content5 {
+
+            width: 30pc;
+            line-height: 25px;
+        }
+
+
+        .content5 img {
+            width: 40px;
+            border-radius: 10px;
+
+        }
+
+        .content5 span {
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 15px;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .section3 .content6 {
+
+            width: 30pc;
+            line-height: 25px;
+        }
+
+        .content5 p {
+            margin-top: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+
+
+
+        .content6 img {
+            width: 40px;
+            border-radius: 10px;
+        }
+
+
+
+        .content6 span {
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 15px;
+
+        }
+
+        .content6 p {
+            margin-top: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+        .Resume {
+            display: flex;
+            align-items: center;
+            color: white;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 35px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #252525;
+
+        }
+
+        .Resume h5 {
+            position: relative;
+            left: 65pc;
+        }
+
+
+        .Education {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 25px;
+
+        }
+
+        .Education h3 {
+
+            border-bottom: 4px solid rgba(216, 74, 74, 1);
+            width: 90px;
+            padding: 3px;
+        }
+
+
+        .section4 {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 80pc;
+            height: 50pc;
+        }
+
+
+
+        .section4 span {
+            display: block;
+            border-left: 2px solid #333;
+            height: 20px;
+            margin-left: 60px;
+            position: absolute;
+            color: #222
+        }
+
+        .section4 p,
+        blockquote {
+
+            width: 25pc;
+            text-align: justify;
+        }
+
+        .content7,
+        .content8 {
+            padding: 30px;
+        }
+
+        .year {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 3px 0px 0px 25px;
+            line-height: 30px;
+
+        }
+
+        .year .detail1 {
+            position: relative;
+            top: 18px;
+            border-bottom: 2px solid #333;
+            padding: 15px;
+            right: 25px;
+            line-height: 2pc;
+        }
+
+        .year h3 {
+            border: 3px solid blue;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            position: relative;
+            bottom: 50px;
+        }
+
+        .year h4 {
+            padding-left: 30px;
+            color: #aaa;
+        }
+
+        .section4 .scan2 {
+            display: block;
+            position: relative;
+            bottom: 115px;
+            height: 10pc;
+
+        }
+
+
+
+        .year2 {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 3px 0px 0px 25px;
+            line-height: 30px;
+
+        }
+
+        .year2 .detail2 {
+            position: relative;
+            bottom: 7.5pc;
+            border-bottom: 2px solid white;
+            padding: 15px;
+            right: 25px;
+            line-height: 2pc;
+            border-color: #333;
+        }
+
+        .year2 h3 {
+            border: 3px solid blue;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            position: relative;
+            bottom: 11.8pc;
+        }
+
+        .year2 h4 {
+            padding-left: 30px;
+            color: #aaa;
+        }
+
+
+
+        .section4 .scan3 {
+            display: block;
+            position: relative;
+            bottom: 16pc;
+            height: 10pc;
+
+        }
+
+
+        .year3 {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 3px 0px 0px 25px;
+            line-height: 30px;
+            position: relative;
+            bottom: 8.8pc;
+        }
+
+        .year3 .detail3 {
+            position: relative;
+            bottom: 7.5pc;
+            padding: 15px;
+            right: 25px;
+            line-height: 2pc;
+        }
+
+        .year3 h3 {
+            border: 3px solid blue;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            position: relative;
+            bottom: 11.7pc;
+        }
+
+        .year3 h4 {
+            padding-left: 30px;
+            color: #aaa;
+        }
+
+
+
+        .section4 .scan4 {
+            display: block;
+            position: relative;
+            bottom: 24.6pc;
+            height: 7.5pc;
+
+        }
+
+
+        .titlecertificate {
+            padding: 30px;
+        }
+
+        .titlecertificate h3 {
+            color: white;
+            border-bottom: 4px solid rgba(216, 74, 74, 1);
+            width: 100px;
+            padding: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: relative;
+            top: 40px;
+        }
+
+        .section5 {
+
+            display: flex;
+            justify-content: space-around;
+            padding: 2pc;
+            width: 80pc;
+
+        }
+
+        .section5 .certificate1 {
+
+            display: flex;
+            border: 1px solid #aaa;
+            border-radius: 20px;
+            width: 35pc;
+            height: 9pc;
+            margin-top: 2pc;
+            transition: 0.1s ease-out;
+
+        }
+
+        .section5 .certificate1:hover {
+            transform: scale(1.1);
+
+        }
+
+        .section5 .certificate1 img {
+
+            border-radius: 20px;
+            width: 18pc
+        }
+
+        .section5 .cer2 {
+            padding: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 30px;
+        }
+
+        .section5 .cer2 h5 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #777;
+        }
+
+
+        .section5 .cer2 p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .section5 .cer3 img {
+            height: 9pc;
+        }
+
+        .section5 .cer4 {
+            padding: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 30px;
+        }
+
+        .section5 .cer4 h5 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #777;
+        }
+
+
+        .section5 .cer4 p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #777;
+            font-size: 12px;
+        }
+
+        #top img {
+            position: fixed;
+            border-radius: 50%;
+            width: 40px;
+            position: relative;
+            left: 80pc;
+            z-index: 90;
+            cursor: pointer;
+        }
+
+
+
+        .Projectstitle {
+            padding: 30px;
+        }
+
+        .Projectstitle h3 {
+            color: white;
+            border-bottom: 4px solid rgba(216, 74, 74, 1);
+            width: 100px;
+            padding: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: relative;
+            top: 40px;
+        }
+
+
+        .section6 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80pc;
+        }
+
+        .subproj p {
+            color: white;
+            padding: 2.5pc;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            width: 40pc
+        }
+
+        .proj1 img {
+            width: 550px;
+            border-bottom-left-radius: 120px;
+            border-top-right-radius: 100px;
+            padding: 50px;
+            transition: all 0.2s ease-out;
+        }
+
+        .proj1 img:hover {
+            transform: scale(0.9);
+        }
+
+        .proj2 h4 {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 5pc;
+            font-size: 18px;
+        }
+
+        .proj2 p {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 40pc;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        .proj2 button {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: whitesmoke;
+
+            border-radius: 10px;
+        }
+
+
+        .proj2 button:hover {
+            box-shadow: black;
+            background-color: burlywood;
+            color: black;
+        }
+
+
+        .proj2 button a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .section7 {
+            
+            width:80pc;
+        }
+        .section7 .container{
+            position: relative;
+            left:20pc;
+            color:white;
+            padding: 25px;
+            width:40pc;
+            border:1px solid whitesmoke;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        .section7 input:focus{
+            background-color: black;
+            color:white
+        }
+
+        .section7 textarea:focus{
+            background-color: black;
+            color:white
+        }
+
+        .section7 input,textarea{
+            padding: 15px;
+            border-radius: 10px;
+            
+        }
+
+        .container #fname,#lname{
+            width:30pc;
+
+        }
+
+        .container input{
+            padding: 18px;
+            font-weight: bold;
+        }
+
+
+        @media(max-width:600px) {
+            .section1{
+                width:80pc;
+                flex-direction: column;
+                align-items:flex-start;
+                padding: 40px;
+                
+            }
+
+            .section1 .content1 img{
+                padding: 5pc;
+            
+            }
+
+            .section1 p{
+                font-size:2pc;
+                margin-top: 2pc;
+            }
+
+            .section1 h3{
+                font-size: 3pc;
+            }
+            .section1 .content2 blockquote{
+                font-size: 2rem;
+                width:78pc;
+                line-height: 2.5pc;
+            }
+
+            .section2{
+                width:80pc;
+                height: 25pc;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 4.5pc;
+
+            }
+
+            .section2 span{
+                font-size: 40px;
+            }
+
+
+            .section2 p{
+                width:80pc;
+                font-size: 1.8em;
+                line-height: 40px;
+                margin-bottom:5pc;
+            }
+
+            .section3{
+                width:80pc;
+                height: 25pc;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 4.5pc;
+            }
+
+
+            
+            .section3 span{
+                font-size: 40px;
+            }
+
+
+            .section3 p{
+                width:80pc;
+                font-size: 1.8em;
+                line-height: 40px;
+                margin-bottom:5pc;
+            }
+
+            .section4 {
+                flex-direction: column;
+                justify-content: space-around;
+                width:60pc;
+                height: 120pc;
+                padding: 12px;
+            }
+
+            .section4 .detail1{
+                margin-left: 40px;
+            }
+            .section4 .year h3{
+                font-size: 1.5rem;
+               
+            
+            }
+
+            .section4 h3{
+                font-size: 1em;
+                
+            }
+
+            .section4 .detail1 h4{
+                
+                font-size: 1.6em;
+                position: relative;
+                bottom: 30px;
+                right:40px;
+
+            }
+
+            .section4 .detail1 p{
+                font-size: 1.5em;
+            }
+            
+            .section4 .detail1 blockquote{
+                font-size:1.4em;
+                width:50pc;
+                line-height:35px;
+
+            }
+
+            /* detail2 */
+
+
+            .section4 .detail2{
+                margin-left: 40px;
+            }
+            .section4 .year2 h3{
+                font-size: 1.5rem;
+               
+            
+            }
+
+
+            .section4 .detail2 h4{
+                
+                font-size: 1.6em;
+                position: relative;
+                bottom: 30px;
+                right:40px;
+
+            }
+
+            .section4 .detail2 p{
+                font-size: 1.5em;
+            }
+            
+            .section4 .detail2 blockquote{
+                font-size:1.4em;
+                width:50pc;
+                line-height:35px;
+
+            }
+            
+  /* detail3 */
+
+
+  .section4 .detail3{
+                margin-left: 40px;
+            }
+            .section4 .year3 h3{
+                font-size: 1.5rem;
+               
+            
+            }
+
+
+            .section4 .detail3 h4{
+                
+                font-size: 1.6em;
+                position: relative;
+                bottom: 30px;
+                right:40px;
+
+            }
+
+            .section4 .detail3 p{
+                font-size: 1.5em;
+            }
+            
+            .section4 .detail3 blockquote{
+                font-size:1.4em;
+                width:50pc;
+                line-height:35px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+
+        <ul>
+
+            <div>
+                <h1><span class="circle">K </span> KATHIRVEL</h1>
+
+            </div>
+
+            <li><a href="#about">About me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="section1" id="about">
+
+        <div class="content1">
+            <img src="../img/myAlbum (1).png" alt="" srcset="">
+        </div>
+
+        <div class="content2">
+            <p>Web designer</p>
+            <h3>Kathirvel</h3>
+            <blockquote>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam quos omnis! Laboriosam,
+                nesciunt aperiam voluptatibus labore quos iste libero mollitia incidunt animi obcaecati laborum at
+                quibusdam aliquam veniam esse!
+            </blockquote>
+        </div>
+    </div>
+
+
+    <div class="what" id="About">
+        <h3>What I Do</h3>
+
+    </div>
+
+    <div class="section2">
+
+        <div class="content3">
+
+            <img src="https://cdn.vectorstock.com/i/thumb-large/70/51/pencil-icon-rounded-squares-button-vector-4527051.jpg"
+                alt="" srcset=""><span>Sketch</span>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates doloribus est aperiam id quo
+                expedita ea deleniti soluta fugiat ipsa, officia veritatis, temporibus quae optio beatae? Pariatur,
+                vitae fugit?</p>
+        </div>
+        <div class="content4">
+            <img src="https://img.freepik.com/premium-vector/low-fidelity-wireframe-icon-vector-image-can-be-used-ux-ui_120816-280820.jpg?w=360"
+                alt="" srcset=""><span>Wireframing</span>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates doloribus est aperiam id quo
+                expedita ea deleniti soluta fugiat ipsa, officia veritatis, temporibus quae optio beatae? Pariatur,
+                vitae fugit?</p>
+        </div>
+    </div>
+
+
+    <div class="section3">
+
+        <div class="content5">
+
+            <img src="https://freebiescloud.com/wp-content/uploads/2020/10/Computer-icons-4.png" alt=""
+                srcset=""><span>Web Design</span>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates doloribus est aperiam id quo
+                expedita ea deleniti soluta fugiat ipsa, officia veritatis, temporibus quae optio beatae? Pariatur,
+                vitae fugit?</p>
+        </div>
+        <div class="content6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4u89fL-d29mxXRwUO41hw4qsDPUub3NLLOhLd6nltAjr8lyTJ3hIbEh9qcCer46ajS8&usqp=CAU"
+                alt="" srcset=""><span>Ecommerce</span>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates doloribus est aperiam id quo
+                expedita ea deleniti soluta fugiat ipsa, officia veritatis, temporibus quae optio beatae? Pariatur,
+                vitae fugit?</p>
+        </div>
+    </div>
+
+    <div class="Resume" id="resume">
+
+        <h1>Resume</h1>
+        <h5>6 months of intern</h5>
+
+
+    </div>
+
+
+
+    <div class="section4">
+
+
+        <div class="content7">
+            <div class="Education">
+
+                <h3>Education </h3>
+
+            </div>
+            <span>.</span>
+
+            <div class="year">
+                <h3>2013</h3>
+
+                <div class="detail1">
+                    <h4>State Board</h4>
+                    <p>SSLC</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorem! Omnis unde minima
+                        illum debitis odit esse quae dicta ipsa?
+                    </blockquote>
+                </div>
+
+            </div>
+
+
+            <span class="scan2">.</span>
+
+
+            <div class="year2">
+                <h3>2016</h3>
+
+                <div class="detail2">
+                    <h4>Dote University</h4>
+                    <p>Diploma in CS/IT</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorem! Omnis unde minima
+                        illum debitis odit esse quae dicta ipsa?
+                    </blockquote>
+                </div>
+
+            </div>
+
+            <span class="scan3">.</span>
+
+
+            <div class="year3">
+                <h3>2019</h3>
+
+                <div class="detail3">
+                    <h4>Anna university (VCET)</h4>
+                    <p>Computer Science and Engineering</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorem! Omnis unde minima
+                        illum debitis odit esse quae dicta ipsa?
+                    </blockquote>
+                </div>
+
+            </div>
+
+            <span class="scan4">.</span>
+
+
+        </div>
+        <div class="content8">
+            <div class="Education">
+
+                <h3>Internship </h3>
+
+            </div>
+            <span>.</span>
+
+            <div class="year">
+                <h3>2019</h3>
+
+                <div class="detail1">
+                    <h4>Zentrain Academy</h4>
+                    <p>Backend developing</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorem! Omnis unde minima
+                        illum debitis odit esse quae dicta ipsa?
+                    </blockquote>
+                </div>
+
+            </div>
+
+
+            <span class="scan2">.</span>
+
+
+            <div class="year2">
+                <h3>2023</h3>
+
+                <div class="detail2">
+                    <h4>7dreamz</h4>
+                    <p>Java Developer</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorem! Omnis unde minima
+                        illum debitis odit esse quae dicta ipsa?
+                    </blockquote>
+                </div>
+
+            </div>
+
+            <span class="scan3">.</span>
+
+
+            <div class="year3">
+                <h3>2024</h3>
+
+                <div class="detail3">
+                    <h4>Skill Development learning center</h4>
+                    <p>UI/UX Designer</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorem! Omnis unde minima
+                        illum debitis odit esse quae dicta ipsa?
+                    </blockquote>
+                </div>
+
+            </div>
+
+            <span class="scan4">.</span>
+
+        </div>
+    </div>
+
+    <div class="titlecertificate">
+        <h3>Certificates</h3>
+    </div>
+
+
+    <div class="section5" id="certificate">
+
+        <div class="certificate1">
+            <div class="cer1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmvcZW--ozaKG8VSEjRhKIsa67EVmtYl5smLetWOax16cXo8147-eBTQDUT7-EvzSm1Y0&usqp=CAU"
+                    alt="">
+            </div>
+
+            <div class="cer2">
+                <h4>UI/UX Design</h4>
+                <h5>Membership ID : 1212121</h5>
+                <p>15 Apr 2025</p>
+            </div>
+        </div>
+        <div class="certificate1">
+            <div class="cer3">
+                <img src="https://public-images.interaction-design.org/literature/articles/heros/article_130515_hero_636e39613117f1.68703759.jpg"
+                    alt="">
+            </div>
+
+            <div class="cer4">
+                <h4>Web Design</h4>
+                <h5>Membership ID : 1212121</h5>
+                <p>15 Apr 2025</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section5">
+
+        <div class="certificate1">
+            <div class="cer1">
+                <img src="https://logowik.com/content/uploads/images/sololearn8062.jpg" style="height:9pc ;" alt="">
+            </div>
+
+            <div class="cer2">
+                <h4>Java Course</h4>
+                <h5>Membership ID : 1212121</h5>
+                <p>15 Apr 2019</p>
+            </div>
+        </div>
+        <div class="certificate1">
+            <div class="cer3">
+                <img src="https://content3.jdmagicbox.com/comp/madurai/s1/0452px452.x452.191229001207.j7s1/catalogue/7-dreamz-vandiyur-madurai-computer-software-developers-wyd36rol4h.jpg"
+                    style="border: 1px solid white ;" alt="">
+            </div>
+
+            <div class="cer4">
+                <h4> Junior Java Developer</h4>
+                <h5>Membership ID : 1212121</h5>
+                <p>15 Apr 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="topnav" id="top">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1pY5G0GHSyEva8B8cHbt4jeW5UpLaWOcEQ&s" alt="">
+    </div>
+
+    <div class="Resume" id="projects">
+
+        <h1>Projects</h1>
+
+
+
+    </div>
+
+    <div class="subproj">
+        <center>
+            <p>Here you will find some of the personal Projects that I created with each projects
+                containing its own case
+            </p>
+
+        </center>
+
+
+    </div>
+
+    <div class="section6">
+
+
+        <div class="proj1">
+            <img src="https://cdn.sanity.io/images/599r6htc/regionalized/3225dab2b34419e6bc17bf52633ed13b4e86cd6d-3262x1836.jpg?rect=1,0,3260,1836&w=1632&h=919&q=75&fit=max&auto=format"
+                alt="">
+        </div>
+
+        <div class="proj2">
+            <h4>Figma</h4>
+
+            <p>
+                I created home rental app,car rental app, tourism app in figma with some prototypes and component set.
+                and i used few animation by using assets of component and component set.
+                Recently i established food app its a clone of some food app and coffee shops.
+            </p>
+
+            <button><a href="http://">Case Study</a></button>
+        </div>
+
+    </div>
+
+
+    <div class="section6" style="padding-left: 50px;">
+
+
+        <div class="proj2">
+            <h4>Figma</h4>
+
+            <p>
+                I created website in figma with some prototypes and component set.
+                and i used few animation by using assets of component and component set.
+                Recently i established home rental desktop design along with payment gateway protocol.
+            </p>
+
+            <button><a href="http://">Case Study</a></button>
+
+
+        </div>
+
+        <div class="proj1">
+
+            <img src="https://i.ytimg.com/vi/5IanQIwhA4E/maxresdefault.jpg" alt="">
+
+        </div>
+
+    </div>
+
+
+
+    <div class="section6">
+
+
+        <div class="proj1">
+            <img src="https://cdn.dribbble.com/users/7735624/screenshots/17478882/media/cd2ee89dd87957dd81ab5b873ffc5583.jpg?format=webp&resize=400x300&vertical=center"
+                alt="">
+        </div>
+
+        <div class="proj2">
+            <h4>Graphic design</h4>
+
+            <p>
+                I learnt home rental poster,Business idea poster desing, tourism poster,christmas poster design and
+                illustrator logo design in figma with some prototypes and component set.
+                and i used few animation by using assets of component and component set.
+                Recently i established food app its a clone of some food app and coffee shops.
+            </p>
+
+            <button><a href="http://">Case Study</a></button>
+        </div>
+
+    </div>
+
+
+
+    <div class="section6" style="padding-left: 50px;">
+
+
+        <div class="proj2">
+            <h4>Webdesign</h4>
+
+            <p>
+                I created responsive webdesign with media queries and my complex part is Resume to bulid block display
+                for border.
+                recently i built a ecommerce responsive web design by html,css,bootstrap with the help of CDN links.
+            </p>
+
+            <button><a href="http://">Case Study</a></button>
+
+
+        </div>
+
+        <div class="proj1">
+
+            <img src="../img/front.JPG" alt="">
+
+        </div>
+
+    </div>
+
+
+    <div class="Resume" id="contact">
+
+        <h1>Contact</h1>
+    </div>
+
+    <div class="subproj">
+        <center>
+            <p>Feel free to contact me by submitting the  form below and i will get back to you as soon as 
+                possible
+            </p>
+
+        </center>
+
+
+    </div>
+
+
+    <div class="section7" style="padding: 20px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+
+<div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label><br><br>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <br><br><br>
+      <label for="lname">Last Name</label><br><br>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <br><br><br>
+      <label for="country">Message</label>
+ <br><br>   <textarea name="" id="" placeholder="Enter your message" style="width:20pc;height: 12pc;"></textarea>
+    <br><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+   
+    </div>
+
+
+</body>
+
+</html>
