@@ -339,7 +339,7 @@
             justify-content: space-between;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             width: 80pc;
-            height: 50pc;
+            
         }
 
 
@@ -677,7 +677,6 @@
         }
         .section7 .container{
             position: relative;
-            left:20pc;
             color:white;
             padding: 25px;
             width:40pc;
@@ -686,6 +685,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin-left:15pc;
             
         }
 
@@ -702,12 +702,11 @@
         .section7 input,textarea{
             padding: 15px;
             border-radius: 10px;
-            
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         .container #fname,#lname{
             width:30pc;
-
         }
 
         .container input{
@@ -795,8 +794,31 @@
                 padding: 12px;
             }
 
+            
+            .section4  .scan2,.scan3,.scan4{
+                margin-top: 10px;
+                
+            }
+
+            .section4 .year,.year2,.year3{
+                padding-top: 18px;
+            }
+
+
+            .detail1{
+                margin-left: 12px;
+            }
+            .detail2{
+                margin-left:12px;
+
+            }
+            .detail3 h4{
+                margin-left:12px;
+            }
+
             .section4 .detail1{
                 margin-left: 40px;
+                margin-top:20px;
             }
             .section4 .year h3{
                 font-size: 1.5rem;
@@ -823,8 +845,8 @@
             }
             
             .section4 .detail1 blockquote{
-                font-size:1.4em;
-                width:50pc;
+                font-size:1.8em;
+                width:60pc;
                 line-height:35px;
 
             }
@@ -834,6 +856,7 @@
 
             .section4 .detail2{
                 margin-left: 40px;
+                 margin-top:20px;
             }
             .section4 .year2 h3{
                 font-size: 1.5rem;
@@ -856,8 +879,8 @@
             }
             
             .section4 .detail2 blockquote{
-                font-size:1.4em;
-                width:50pc;
+                font-size:1.6em;
+                width:60pc;
                 line-height:35px;
 
             }
@@ -867,6 +890,8 @@
 
   .section4 .detail3{
                 margin-left: 40px;
+                margin-top:20px;
+                
             }
             .section4 .year3 h3{
                 font-size: 1.5rem;
@@ -889,12 +914,89 @@
             }
             
             .section4 .detail3 blockquote{
-                font-size:1.4em;
-                width:50pc;
+                font-size:1.8em;
+                width:60pc;
                 line-height:35px;
-
+                
             }
 
+            .section4 .content8{
+                position: relative;
+                bottom:18pc;
+            }
+
+            .section5{
+                flex-direction: column;
+            }
+
+            .section5 .certificate1 {
+                width:80pc;
+                height: 20pc;
+            }
+
+            .section5 .certificate1 .cer1 img{
+                height: 20pc;
+                width:40pc
+            }
+
+            .section5 .certificate1 img{
+                height: 20pc;
+                width:40pc
+            }
+
+
+            .section6 img{
+                width:38pc
+            }
+
+            .section6 .proj2 h4{
+                font-size: 2pc;
+            }
+
+            .section6 .proj2 p{
+                font-size: 1.5pc;
+                line-height: 2pc;
+                text-align: justify;
+                padding: 10px;
+            }
+
+            .section6 button{
+                width:12pc;
+                margin-left: 0.5pc;
+                text-align: center;
+            }
+
+            .section7 .container{
+                width:60pc;
+                
+                
+            }
+
+            .section7  #fname,#lname{
+                width:50pc;
+                padding: 1.5pc;
+            }
+
+            .section7 .container #text-area{
+                width:50pc;
+            }
+
+            .section7 .container #btn{
+                padding: 15px 25px 15px 25px;
+                font-size: 20px;
+            }
+
+            .section7 .container #btn:hover{
+                background-color: #333;
+                color: white;
+                box-shadow: 2px 2px 2px 2px greenyellow;
+            }
+
+            .subproj{
+                position: relative;
+                left: 20pc;
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -1158,8 +1260,9 @@
     <div class="section5">
 
         <div class="certificate1">
-            <div class="cer1">
-                <img src="https://logowik.com/content/uploads/images/sololearn8062.jpg" style="height:9pc ;" alt="">
+            <div class="cer3">
+                <img src="https://content3.jdmagicbox.com/comp/madurai/s1/0452px452.x452.191229001207.j7s1/catalogue/7-dreamz-vandiyur-madurai-computer-software-developers-wyd36rol4h.jpg"
+                    style="border: 1px solid white ;" alt="">
             </div>
 
             <div class="cer2">
@@ -1334,9 +1437,9 @@
       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
   <br><br><br>
       <label for="country">Message</label>
- <br><br>   <textarea name="" id="" placeholder="Enter your message" style="width:20pc;height: 12pc;"></textarea>
+ <br><br>   <textarea id="text-area" style="width:35pc;height: 10pc;" placeholder="Enter your message" style="width:20pc;height: 12pc;"></textarea>
     <br><br><br>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" id="btn">
     </form>
   </div>
    
